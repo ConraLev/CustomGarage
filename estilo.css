@@ -1,7 +1,7 @@
 * {font-family: 'Yanone Kaffeesatz', sans-serif;}
 
 body {
-	background: linear-gradient(90deg, rgba(98,98,98,1) 0%, rgba(143,143,143,1) 50%, rgba(98,98,98,1) 100%);
+	background: linear-gradient(90deg, rgba(99,99,99,1) 0%, rgba(153,153,153,1) 50%, rgba(99,99,99,1) 100%);
 
 	}
 
@@ -107,7 +107,95 @@ i { display: inline-block;
 
 }
 
-/** --------------- RESPONSIVE -------------**/
+
+/**----------------- FOOTER ---------------------*/
+
+.footer_redes {
+	display: flex;
+	border: 0px solid red;
+	width: 31vh;
+	font-size: 1.5vh;
+	margin-left: 135vh;
+	
+}
+
+.footer_redes img{
+	
+	height: 5vh;
+	align-items: center;
+}
+
+.footer_redes img:hover {
+	height: 5.5vh;
+}
+
+.footer_redes h2{
+	padding-top: 13px;
+	padding-right: 3px;
+	color:rgb(8, 8, 8);
+	text-align: center;
+}
+
+.footer_redes h2:hover {
+	color: #c01717;
+}
+
+.footer_redes a{
+	padding: 10px 5px;
+}
+
+.foco{
+	padding-left: 12px;
+}
+
+.footer{
+	margin-top: 10vh;
+	border-top: 1px solid #c01717;
+	border-bottom: 1px solid #c01717;
+	display: flex;
+	padding-top: 1.5vh;
+	padding-bottom: 1.5vh;
+	background-color: #56565a56;
+	transition: 1s;
+}
+
+.footer:hover{
+	background-color: rgba(87, 87, 91, 0.87);
+	transition: 1s;
+}
+
+
+.copyright {
+	font-size: 18px;
+	text-align: center;
+	padding-bottom: 3vh;
+	padding-top: 3vh;
+}
+
+.footer_cont { 
+	margin-left: 10vh;
+	
+}
+
+.footer_cont h4{
+	justify-content: center;
+	font-size: 20px;
+	text-align: center;
+	color: hsl(0, 77%, 38%);
+	text-shadow: 0px 1px 1px black;
+	margin-top: 1vh;
+}
+
+.footer_cont il{
+	font-size: 17px;
+	display: inline;
+}
+
+
+.footer_cont il:hover{
+	color: #e7dcdc;
+}
+
 
 @media only screen and ( max-width: 990px) {
 	.menu__li {
@@ -122,49 +210,89 @@ i { display: inline-block;
 	.Search__button {
 		display: none;
 	}
-
+	
 	.menu-responsive {
 		display: flex;
 	}
-
+	
 	header {
 		height: 100px;
 	}
 }
 
+
+/** --------------- INDEX -------------**/
+
 .logo {
-	z-index: 1000;
-	margin-top: -1200px;
-	margin-left: -400px;
+	display: flex;
+	position: absolute;
+	margin-left: calc(0% - 50vh);
+	padding-top: 10vh;
+
 }
 
 .fondo {
-	z-index: 200;
-	margin-top: -100px;
+	display: flex;
 }
 
-.content {
-	margin-left: 7em;
+.fondo img{
+	margin-top: -2vh;
+	width: 100%;
+	z-index: -1;
+}
+
+.index_content {
+	display: flex;
+	gap: 50px;
+	flex-wrap: wrap;
+	overflow: hidden;
+	padding-top: 10vh;
+	padding-bottom: 10vh;
+	justify-content: center;
+	border-top: 2px solid #c01717;
+	
+	
 }
 
 
-.content__taller{
-	display: inline-flex;
-	border: 4px solid black;
-	margin: 20px;
-	padding: 10px;
-	width: 50em;
-	height: 40em;
+.index_content__taller{
+	
+	border: 2px solid black;
+	border-bottom-left-radius: 5vh;
+	border-top-right-radius: 5vh;
+	width: 90vh;
+	height: 80vh;
+	box-shadow: 2px 2px 15px black;
+	background-color: #999898e8
 
-} 
 
-.Garage {
-	display: inline-flex;
-	margin: 20px;
-	padding: 10px;
-	width: 50em;
-	height: 40em;
+}  
+
+.index_content__taller img{
+	background-size:cover;
+	width: 85vh;
+	height: 60vh;
+	margin: 2vh 0px 0px 2.3vh;
+	border: 2px solid black;
+	border-radius: 7px;
+	
+	
 }
+
+.index_content__taller h3{
+	margin-top: 2vh;
+	font-size: 5vh;
+	color: #c01717;
+	text-align: center;
+	text-shadow: 2px 2px 5px #241c1c;
+}
+
+.index_content__taller p{
+	font-size: 2.4vh;
+	color: black;
+	text-align: center;
+}
+
 
 .Marcas {
 	display: flex;
@@ -217,10 +345,7 @@ i { display: inline-block;
 	background-color: transparent;
 	border-bottom: 2px solid #c01717;
 	font-size: 18px;
-	
-	
 }
-
 
 .form_chico::placeholder {
 	color: #e7dcdc
@@ -279,100 +404,39 @@ i { display: inline-block;
 /** --------------- FIN CONTACTO ----------------- **/
 
 
-.footer_redes {
-	display: flex;
-	border: 0px solid red;
-	width: 31vh;
-	font-size: 1.5vh;
-	margin-left: 135vh;
-	
-}
-
-.footer_redes img{
-	
-	height: 5vh;
-	align-items: center;
-}
-
-.footer_redes img:hover {
-	height: 5.5vh;
-}
-
-.footer_redes h2{
-	padding-top: 13px;
-	padding-right: 3px;
-	color:rgb(8, 8, 8);
-	text-align: center;
-}
-
-.footer_redes h2:hover {
-	color: #c01717;
-}
-
-.footer_redes a{
-	padding: 10px 5px;
-}
-
-.foco{
-	padding-left: 12px;
-}
-
-.footer{
-	margin-top: 10vh;
-	border-top: 1px solid #c01717;
-	border-bottom: 1px solid #c01717;
-	display: flex;
-	padding-top: 1.5vh;
-	padding-bottom: 1.5vh;
-	background-color: #56565a56;
-
-	
-}
-
-.copyright {
-	font-size: 18px;
-	text-align: center;
-	padding-bottom: 3vh;
-	padding-top: 3vh;
-}
-
-.footer_cont { 
-	margin-left: 10vh;
-	
-}
-
-.footer_cont h4{
-	justify-content: center;
-	font-size: 20px;
-	text-align: center;
-	color: hsl(0, 77%, 38%);
-	text-shadow: 0px 1px 1px black;
-	margin-top: 1vh;
-}
-
-.footer_cont il{
-	font-size: 17px;
-	display: inline;
-}
 
 
-.footer_cont il:hover{
-	color: #e7dcdc;
-}
+
+
+/** -------------------------------- TURNOS --------------------------------*/
+
+
 
 .turnos {
 	padding: 30px;
-	border: 4px solid black;
+	border: 2px solid black;
 	width: 60vh;
 	height: 60vh;
 	margin-top: 18vh;
 	margin-left: calc(50% - 30vh);
+	border-bottom-right-radius: 3vh;
+	background-color: rgba(116, 115, 115, 0.932);
+	box-shadow: 3px 3px 10px black;;
+	
 }	
 
+.turnos_form_time {
+	display:inline-flex
+	
+}
+
+
 .turnos h2{
+	text-shadow: 2px 2px 2px hsl(0, 4%, 5%);
 	font-size: 50px;
 	text-align: center;
 	color: #c01717;
+
 	
 }
 
@@ -390,17 +454,18 @@ i { display: inline-block;
 	margin-bottom: 1vh;
 	overflow:hidden;
 	display: flex;
+	outline: none;
 
 }
 
 .turnos input[type="time"]{
-	box-sizing: border-box;
 	border: 2px solid #c01717;
 	height: 4vh;
-	width: 25vh;
+	width: 25.5vh;
 	margin-bottom: 1vh;
 	overflow:hidden;
 	margin-left: 25px;
+	outline: none;
 	
 
 }
@@ -419,6 +484,7 @@ i { display: inline-block;
 	width: 100%;
 	margin-bottom: 1vh;
 	overflow:hidden;
+	outline: none;
 }
 
 .turnos input[type="email"]{
@@ -428,21 +494,81 @@ i { display: inline-block;
 	width: 100%;
 	margin-bottom: 1vh;
 	overflow:hidden;
+	outline: none;
 }
 
-.turnos_form_time {
-	display:inline-flex
+
+.turnos input[type="text"]{
+	box-sizing: border-box;
+	border: 2px solid #c01717;
+	height: 4vh;
+	width: 100%;
+	margin-bottom: 1vh;
+	overflow:hidden;
+	outline: none;
+}
+
+.turnos input[type="tel"]{
+	box-sizing: border-box;
+	border: 2px solid #c01717;
+	height: 4vh;
+	width: 100%;
+	margin-bottom: 1vh;
+	overflow:hidden;
+	outline: none;
+}
+
+.turnos input[type="textarea"]{
+	box-sizing: border-box;
+	border: 2px solid #c01717;
+	height: 18vh;
+	width: 100%;
+	margin-bottom: 1vh;
+	overflow:hidden;
+	outline: none;
+	font-size: 20px;
+
+}
+
+.turnos input[type="textarea"]::placeholder{
+	text-align: center;
+}
+
+.turnos_form_time input {
+	text-align: center;
+
+}
+
+.turnos input::placeholder{
+	text-align: center;
+}
+
+.turnos input[type="submit"]{
+	box-sizing: border-box;
+	height: 4vh;
+	width: 100%;
+	margin-bottom: 1vh;
+	overflow:hidden;
+	background-color: #c01717;
+	color: white;
+}
+
+.turnos_fondo {
+	background-image: url(Motos/fondo_turnos.jpg);
+	background-size: cover;
+
 	
 }
 
 
-/** PAGINA GARAGE **/
+
+/**---------------------------- PAGINA GARAGE ---------------------------- **/
 
 .garage_intro {
 	display: flex;
 	width: 100%;
 	height: 60vh;
-	background-image: url("../Imagenes/garage_intro.jpg");
+	background-image: url("garage_intro.jpg");
 	background-size: cover;
 	border-bottom: 3px solid #c01717;
 }
@@ -461,18 +587,20 @@ i { display: inline-block;
 
 .garage_intro img {
 	margin: auto;
-	padding-right: 200px;
+	margin-left: 20px;
 
 }
 
 .garage_cont {
 	width: 90%;
 	height: 90vh;
-	border: 5px solid #c01717;
+	border: 1px solid black;
 	right: 0;
 	left: 0;
 	margin: auto;
 	margin-top: 7vh;
+	box-shadow: 3px 3px 20px black;
+	border-radius: 5px;	
 	
 	
 }
@@ -486,11 +614,31 @@ i { display: inline-block;
 
 .garage_cont_img img{
 	margin: 20px;
-	width: calc(30% - 1px);
+	width: calc(31% - 1px);
 	height: 70vh;		
-	border-bottom-right-radius: 10%;																																																																																																									
-	margin-top: 120px;
-	border: 5px solid #c01717;
+	border-radius: 3%;
+	box-shadow: 3px 3px 20px black;
+	transition: 0.6s;
+	
+}	
 
+.garage_cont_img img:hover{
+	margin: 5px;
+	width: calc(60% - 1px);
+	height: 80vh;		
+	border-radius: 2%;
+	box-shadow: 50px 50px 400px black;
+	transition: 1.3s;
+}
+
+
+.garage_cont h2{
+	color: #c01717;
+	font-size: 80px;
+	text-align: center;
+	padding-top: 4vh;
+	text-shadow: 2px 2px 2px hsl(0, 4%, 5%);
 
 }
+
+

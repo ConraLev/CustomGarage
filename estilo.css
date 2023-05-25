@@ -35,9 +35,9 @@ b {
 	font-size: 30px;
 }
 
-a {
+/* a {
 	text-decoration: none;
-	color: white;}
+	color: white;} */
 
 nav {
 	background-color: black;
@@ -632,8 +632,10 @@ i {/*  display: inline-block; */
 
 
 /* -----------------RESPONSIVE------------------- */
-	
 
+/* RESOLUCION 481 * 768 */
+	
+/* COMIEZO DE HEADER */
 
 @media only screen and ( max-width: 481px) {
 	header{
@@ -658,54 +660,19 @@ i {/*  display: inline-block; */
 	.menu-responsive{
 		display: flex;
 		margin-top: 15px;
-	
+		
 	}
 	
 	.logo_header {
 		display: none;
 	}
-
+	
 	/* HASTA ACA HEADER */
-
-
-	/* CONTACTO */
-
-
-	.conten_form{
-		margin-left: 0;
-		margin-bottom: 0;
-		padding: 10px;
- 		display: flex;
-		flex-direction: column;
-		gap: 10vh;
-	}
-
-
-	.conten_form h2{
-		font-size: 4vh;
-		text-align: center;
-	
-	}
-
-	.form_chico{
-		width: 60vh;
-		text-align: center;
-	}
-
-	.form_grande{
-		width: 60vh;
-		text-align: center;
-	}
-
 	
 	
-	.info_local{
-		margin: 0;
-		text-align: center;
-		padding: 10px;
-	}
-
-
+	/* ACA COMINEZA FOOTER */ 
+	
+	
 	.footer_cont{
 		margin: 0;
 		align-items: center;
@@ -735,9 +702,166 @@ i {/*  display: inline-block; */
 	
 	}
 	}
+	
+	/* FIN DE FOOTER */
+	
+	
+	/* CONTACTO */
+	
+	
+	.conten_form{
+		margin-left: 0;
+		margin-bottom: 0;
+		padding: 10px;
+		display: flex;
+		flex-direction: column;
+		gap: 10vh;
+	}
+	
+	
+	.conten_form h2{
+		font-size: 4vh;
+		text-align: center;
+		
+	}
+	
+	.form_chico{
+		width: 60vh;
+		text-align: center;
+	}
+	
+	.form_grande{
+		width: 60vh;
+		text-align: center;
+	}
+	
+	
+	
+	.info_local{
+		margin: 0;
+		text-align: center;
+		padding: 10px;
+	}
 
 
-
+/* RESOLUCION 320*480 */
 
 	
+	@media only screen and ( max-width: 320px) {
+		header{
+			width: 320px;
+		}
+	
+		header b{
+			display: none;
+		}
+	
+		.menu__li {
+			display: none;
+		}
+	
+		.Search__text {
+			display: none;
+		}
+		.Search__button {
+			display: none;
+		}
+	
+		.menu-responsive{
+			display: flex;
+			margin: 0;
+			
+		}
 
+		.menu-responsive a{
+			display: none;
+		}
+		
+		.logo_header {
+			display: none;
+		}
+		
+		/* FIN DE HEADER */
+		
+
+
+		
+		/* ACA COMINEZA FOOTER */ 
+		
+		
+		.footer_cont{
+			margin: 0;
+			align-items: center;
+		}
+	
+		.footer_redes h2{
+			display: none;
+		}
+	
+		.footer_redes{
+			display: flex;
+			flex-wrap: wrap;
+			margin: auto;
+			width: 150px;
+			margin-right: 1px;
+			font-size: 2vh;
+		}
+	
+		.footer_redes i{
+			font-size: 3vh;
+			padding: 10px;
+			text-align: right;
+		}
+	
+		.footer_redes i:hover{
+			color: white;
+		
+		}
+		}
+		
+		/* FIN DE FOOTER */
+		
+		
+		/* CONTACTO */
+		
+/* 		
+		.conten_form{
+			margin-left: 0;
+			margin-bottom: 0;
+			padding: 10px;
+			display: flex;
+			flex-direction: column;
+			gap: 10vh;
+		}
+		
+		
+		.conten_form h2{
+			font-size: 4vh;
+			text-align: center;
+			
+		}
+		
+		.form_chico{
+			width: 60vh;
+			text-align: center;
+		}
+		
+		.form_grande{
+			width: 60vh;
+			text-align: center;
+		}
+		
+		
+		
+		.info_local{
+			margin: 0;
+			text-align: center;
+			padding: 10px;
+		}
+	 
+	 */
+	
+	
+	
+	
+	

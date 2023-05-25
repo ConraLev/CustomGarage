@@ -544,7 +544,7 @@ i {/*  display: inline-block; */
 }
 
 .turnos_fondo {
-	background-image: url("/assets/images/Motos/fondo_turnos.jpg");
+	background-image: url("../images/Motos/fondo_turnos.jpg");
 	background-size: cover;
 	width: 100%;
 	height: 100%;
@@ -561,7 +561,7 @@ i {/*  display: inline-block; */
 	display: flex;
 	width: 100%;
 	height: 60vh;
-	background-image: url("/assets/images/garage_intro.jpg");
+	background-image: url("../images/garage_intro.jpg");
 	background-size: cover;
 	border-bottom: 3px solid #c01717;
 }

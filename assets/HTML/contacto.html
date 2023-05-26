@@ -8,18 +8,19 @@
 	<link rel="icon" href="assets/images/Logo-pagina.png">
 	<link rel="stylesheet" type="text/css" href="../CSS/estilo.css">
 	<link rel="stylesheet" type="text/css" href="../CSS/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/media.css">
 	<script src="https://kit.fontawesome.com/e912bc3fa4.js" crossorigin="anonymous"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <script async src="../JS/script.js"></script>
 	<title> Custom Garage </title>
 </head>
 <body>
 
-	<!-- ACA EMPIEZA EL HEADER--> 
+	<!-- COMIENZA EL HEADER--> 
 
 	<header>
         <b>CUSTOM GARAGE</b>
-       <img class="logo_header" src="/assets/images/Logo.png" alt="Logo de Custom Garage">
+       <img class="logo_header" src="../images/Logo.png" alt="Logo de Custom Garage">
        <nav class="menu">
            <ul class="menu__ul">
                <li class="menu__li"> <i class="fa-solid fa-house"></i><a href="../../index.html">HOME</a></li>
@@ -43,98 +44,101 @@
    </header>
    <br>
 
-	<!-- ACA TERMINA EL HEADER--> 
+	
+   <!-- TERMINA EL HEADER // COMIENZA MAIN  --> 
    
+   <main>
+        <div class="conten_form">
+            <div>
+                <div class="conten_form_cont">
+                    <form id="form">
+                        <h2>NOMBRE</h2>
+                        <input class="form_chico" id="name" type="text" maxlength="22" placeholder="Ingrese su Nombre Completo">
+                    
+                        <h2>APELLIDO</h2>
+                        <input class="form_chico" id="lastname" type="text" maxlength="22" placeholder="Ingrese su Apeliido Completo">
+                    
+                        <h2>EMAIL</h2>
+                        <input class="form_chico" id="email" type="email" placeholder="Ejemplo: Marcos@yahoo.com" >
 
-   <div class="conten_form">
-        <div>
-            <div class="conten_form_cont">
-                <form>
-                    <h2>NOMBRE</h2>
-                    <input class="form_chico" type="text" maxlength="22" placeholder="Ingrese su Nombre Completo" required>
-                
-                    <h2>APELLIDO</h2>
-                    <input class="form_chico" type="text" maxlength="22" placeholder="Ingrese su Apeliido Completo" required>
-                
-                    <h2>EMAIL</h2>
-                    <input class="form_chico" type="email" placeholder="Ejemplo: Marcos@yahoo.com" required>
+                        <h2>MENSAJE</h2>
+                        <textarea class="form_grande" id="mensaje" type="text" placeholder="DEJANOS TU MENSAJE"></textarea>
 
-                    <h2>MENSAJE</h2>
-                    <textarea class="form_grande" type="text" placeholder="DEJANOS TU MENSAJE" required></textarea>
-
-                    <h2>TELEFONO DE CONTACTO</h2>
-                    <input class="form_chico" type="number" max="10" placeholder="Opcional">
-                    <button class="form_btn" type="submit">ENVIAR</button>
-                </form> 
+                        <h2>TELEFONO DE CONTACTO</h2>
+                        <input class="form_chico" id="tel" type="tel"  placeholder="Opcional">
+                        <button class="form_btn" type="submit">ENVIAR</button>
+                        <p class="form_error" id="form_error"></h4>
+                        <h3 class="form_ok" id="form_ok"> MENSAJE ENVIADO</h3>
+                    </form> 
+                </div>
+            </div>
+            <div class="conten_info">
+                <div class="info_local">
+                    <h2>NUESTRO LOCAL</h2>
+                    <p> Estamos en Rivadavia 1000, CABA.
+                    </p>
+                    <h2>HORARIOS DE ATENCION</h2>
+                    <p>Lunes a Viernes de 08:00 a 18:00 HS <br>
+                        Sabado y Domingo <b>CERRADO</b></p>
+                    <h2>MAIL DE CONTACTO</h2>
+                    <p>CustomGarage@gmail.com</p>
+                    <br>
+                    <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5522.727532491644!2d-58.38412564314189!3d-34.60837311683637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccad04a0b51c1%3A0xe7258a1f1340cbbd!2sAv.%20Rivadavia%201000%2C%20C1002AAU%20CABA!5e0!3m2!1ses-419!2sar!4v1684274947083!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe class="maps2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8199439277446!2d-58.3805342!3d-34.6087143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccad04a0b51c1%3A0xe7258a1f1340cbbd!2sAv.%20Rivadavia%201000%2C%20C1002AAU%20CABA!5e0!3m2!1ses!2sar!4v1684989517182!5m2!1ses!2sar" width="300" height="280" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
         </div>
-        <div>
-            <div class="info_local">
-                <h2>NUESTRO LOCAL</h2>
-                <p> Estamos en Rivadavia 1000, CABA.
-                </p>
-                <h2>HORARIOS DE ATENCION</h2>
-                <p>Lunes a Viernes de 08:00 a 18:00 HS <br>
-                    Sabado y Domingo CERRADO</p>
-                <h2>MAIL DE CONTACTO</h2>
-                <p>CustomGarage@gmail.com</p>
-                <br>
-                <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5522.727532491644!2d-58.38412564314189!3d-34.60837311683637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccad04a0b51c1%3A0xe7258a1f1340cbbd!2sAv.%20Rivadavia%201000%2C%20C1002AAU%20CABA!5e0!3m2!1ses-419!2sar!4v1684274947083!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <iframe class="maps2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8199439277446!2d-58.3805342!3d-34.6087143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccad04a0b51c1%3A0xe7258a1f1340cbbd!2sAv.%20Rivadavia%201000%2C%20C1002AAU%20CABA!5e0!3m2!1ses!2sar!4v1684989517182!5m2!1ses!2sar" width="300" height="280" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </div>
-	</div>
-
-
-
-<!-- ACA TERMINA EL CONTENT -->
-
-
-
-<footer class="footer">
-
-    <div class="footer_cont">
-        
-        <h4>CONTACTANOS </h4>
-        <ul>
-            <il><i class="fa-sharp fa-solid fa-phone"></i>11 2714-4517<br></il>
-            <il><i class="fa-solid fa-at"></i>CustomGarage@gmail.com<br></il>
-            <il><i class="fa-solid fa-location-dot"></i> Rivadavia 1000, CABA<br></il>
-            
-        </ul>
-
-    </div>
-
-
-    <div class="footer_redes">
-
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank" type=>
-            <h2> TIKTOK</h2>
-            <i class="fa-brands fa-tiktok"></i>
-       </a>
-      
-       <a href="https://www.facebook.com/" target="_blank">
-            <h2>FACEBOOK</h2> 
-            <i class="fa-brands fa-facebook-f"></i>
-       </a>
-       <a href="https://www.youtube.com/" target="_blank">
-            <h2>YOUTUBE</h2> 
-            <i class="fa-brands fa-youtube"></i>
-       </a>
-       <a href="https://www.instagram.com/" target="_blank">
-            <h2>INSTAGRAM</h2>
-            <i class="fa-brands fa-instagram fa-2x1"></i>
-       </a> 
+    </main>
     
-    </div>
 
-</footer>
+<!-- TERMINA MAIN // COMIENZA FOOTER   -->
 
 
-<p class="copyright">
-    Copyright® <br>
-    Todos los derechos reservados
-</p>
+
+    <footer class="footer">
+
+        <div class="footer_cont">
+            
+            <h4>CONTACTANOS </h4>
+            <ul>
+                <il><i class="fa-sharp fa-solid fa-phone"></i>11 2714-4517<br></il>
+                <il><i class="fa-solid fa-at"></i>CustomGarage@gmail.com<br></il>
+                <il><i class="fa-solid fa-location-dot"></i> Rivadavia 1000, CABA<br></il>
+                
+            </ul>
+
+        </div>
+
+
+        <div class="footer_redes">
+
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank" type=>
+                <h2> TIKTOK</h2>
+                <i class="fa-brands fa-tiktok"></i>
+        </a>
+        
+        <a href="https://www.facebook.com/" target="_blank">
+                <h2>FACEBOOK</h2> 
+                <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="https://www.youtube.com/" target="_blank">
+                <h2>YOUTUBE</h2> 
+                <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+                <h2>INSTAGRAM</h2>
+                <i class="fa-brands fa-instagram fa-2x1"></i>
+        </a> 
+        
+        </div>
+
+    </footer>
+
+
+        <p class="copyright">
+            Copyright® <br>
+            Todos los derechos reservados
+        </p>
 
 </body>
 </html> 

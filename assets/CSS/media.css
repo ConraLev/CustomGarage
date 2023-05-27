@@ -123,14 +123,23 @@
 		display: none;
 	}
 
+	.info_local{
+		margin-left: -60px;
+	}
 
 	.conten_form{
-		margin-left: 0;
-		margin-bottom: 0;
-		padding: 10px;
  		display: flex;
 		flex-direction: column;
 		gap: 10vh;
+	
+
+	}
+
+
+
+	.conten_form_cont{
+		margin-left: -60px;
+
 	}
 
 
@@ -143,10 +152,8 @@
 	.form_chico{
 		width: 100%;
 		text-align: center;
-		font-size: 4vh;
-		
+		font-size: 3vh;
 	}
-
 
 	
 
@@ -193,6 +200,12 @@
 	}
 
 }
+
+
+
+
+
+
 
 @media only screen and ( max-width: 700px) {
 	.logo_header{

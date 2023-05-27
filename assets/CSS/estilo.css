@@ -30,7 +30,6 @@ header.b {
 	color: #c01717;
 	padding-left: 40px;
 	padding-top: 1em;
-
 	text-align: center;
 	font-size: 30px;
 }
@@ -391,6 +390,7 @@ i {
 	border: none;
 	padding-top: 1vh;
 	color: #e7dcdc;
+	font-size: 2.5vh;
 }
 
 .form_btn:hover {

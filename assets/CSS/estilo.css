@@ -321,6 +321,10 @@ i {
 	
 }
 
+.conten_form_cont{
+	width: 70vh;
+}
+
 .conten_form h2 {
 	color: hsl(0, 77%, 38%);
 	text-shadow: 1px 1px 2px black;
@@ -330,7 +334,7 @@ i {
 .form_chico {
 	border: none;
 	height: 4vh;
-	width: 70vh;
+	width: 100%;
 	background-color: transparent;
 	border-bottom: 2px solid #c01717;
 	text-shadow: 1px 1px 1px black;
@@ -342,7 +346,7 @@ i {
 .form_grande {
 	border: none;
 	resize: none;
-	width: 70vh;
+	width: 100%;
 	height: 20vh;
 	background-color: transparent;
 	border-bottom: 2px solid #c01717;

@@ -19,8 +19,18 @@ const error = document.getElementById("form_error")
         ok = true
       }
 
+      if(nombre.value.length > 20){
+        errors += 'EL NOMBRE ES MUY LARGO<br>';
+        ok = true
+      }
+
       if(apellido.value.length <4){
         errors += 'INGRESAR APELLIDO COMPLETO<br>';
+        ok = true
+      }
+
+      if(apllido.value.length > 20){
+        errors += 'EL APELLIDO ES MUY LARGO<br>';
         ok = true
       }
         
